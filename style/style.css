@@ -94,6 +94,17 @@ header, footer {
     margin-left: 50%;
 }
 
+@-moz-document url-prefix() {
+    #intro img:last-child {
+        margin-left: 100%;
+    }
+
+    #intro img {
+        height: 100%;
+        margin-left: -100%;
+        position: absolute;
+    }
+}
 /* section 1 */
 
 .romanToInt, .intToRoman {
