@@ -2,26 +2,52 @@
 <html lang="pl-PL">
 <head>
     <meta charset="UTF-8">
-    <title>Kalkulator cyfr rzymskich</title>
+    <title>Konwerter liczb rzymskich</title>
     <link rel="stylesheet" href="style/style.css">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
 
 </head>
 <body>
 
-<form id="frm1">
-    Podaj liczbe: <input type="text" name="fname" id="number"><br>
-</form>
+<section class="romanToInt">
+    <form id="frm1">
+        Podaj liczbe: <input type="text" id="number"><br>
+    </form>
 
-<p>Kliknij "Zamień", aby wyświetlić cyfrę arabską.</p>
+    <div id="message">
+        <h3>Liczba powinna składać się ze znaków:</h3>
+        <ul>
+            <li>I</li>
+            <li>V</li>
+            <li>X</li>
+            <li>L</li>
+            <li>C</li>
+            <li>D</li>
+            <li>M</li>
+        </ul>
+    </div>
 
-<button onclick="convert()">Zamień</button>
+    <p>Kliknij "Zamień", aby wyświetlić cyfrę arabską.</p>
 
-<p id="converted"></p>
+    <button onclick="convert()">Zamień</button>
+
+    <p id="converted"></p>
+</section>
 
 
+<section class="intToRoman">
+    <form id="frm2">
+        Podaj liczbe: <input type="text" id="arabic"><br>
+    </form>
 
-<script src="js/main.js"></script>
+    <p>Kliknij "Zamień", aby wyświetlić cyfrę rzymską.</p>
+
+    <button onclick="convert2()">Zamień</button>
+
+    <p id="converted2"></p>
+</section>
+
+
 </body>
-
+<script src="js/main.js"></script>
 </html>
