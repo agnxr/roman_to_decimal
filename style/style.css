@@ -50,41 +50,6 @@ header, footer {
     z-index: 9999;
 }
 
-@media screen and (max-width: 1725px) {
-    #intro h1 {
-        font-size: 400%;
-    }
-
-    #intro p {
-        font-size: 200%;
-    }
-}
-
-@media screen and (max-width: 1450px) {
-    #intro h1 {
-        font-size: 360%;
-    }
-
-    #intro p {
-        font-size: 160%;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    #intro h1 {
-        font-size: 330%;
-    }
-
-    #intro p {
-        font-size: 130%;
-    }
-
-    #intro {
-        height: 200px;
-    }
-}
-
-
 #intro img:last-child{
     -moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
@@ -203,6 +168,41 @@ footer a {
     color: #5F506A;
 }
 
+/* media queries */
+
+@media screen and (max-width: 1725px) {
+    #intro h1 {
+        font-size: 400%;
+    }
+
+    #intro p {
+        font-size: 200%;
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    #intro h1 {
+        font-size: 360%;
+    }
+
+    #intro p {
+        font-size: 160%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    #intro h1 {
+        font-size: 330%;
+    }
+
+    #intro p {
+        font-size: 130%;
+    }
+
+    #intro {
+        height: 200px;
+    }
+}
 
 @media screen and (max-width: 980px) {
     #intro img {
