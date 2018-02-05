@@ -1,16 +1,192 @@
-/* The message box is shown when the user clicks on the password field */
-#message {
-    display: none;
-    background: #f1f1f1;
-    color: #000;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Sanchez', serif;
+    background-color: #97939f;
+}
+
+header, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#intro {
+    background-color: #868190;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     position: relative;
-    padding: 20px;
-    margin-top: 10px;
+    height: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#intro div {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#intro img {
+    height: 100%;
+    margin-left: -50%;
+    position: absolute;
+}
+
+#intro h1 {
+    font-size: 450%;
+    color: #D1D5DB;
+}
+
+#intro p {
+    font-size: 250%;
+    margin-top: 20px;
+    color: #5F506A;
+    z-index: 9999;
+}
+
+@media screen and (max-width: 1725px) {
+    .intro h1 {
+        font-size: 400%;
+    }
+
+    .intro p {
+        font-size: 200%;
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .intro h1 {
+        font-size: 360%;
+    }
+
+    .intro p {
+        font-size: 160%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .intro h1 {
+        font-size: 330%;
+    }
+
+    .intro p {
+        font-size: 130%;
+    }
+
+    .intro {
+        height: 200px;
+    }
+}
+
+#intro img:last-child{
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+    margin-left: 50%;
+}
+
+/* section 1 */
+
+.romanToInt, .intToRoman {
+    width: 50vw;
+    margin: 0 auto;
+    background-color: #5F506A;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 20px;
 }
 
 
+.romanToInt div, .intToRoman div {
+    padding: 40px;
+}
 
-#message p {
-    padding: 10px 35px;
-    font-size: 18px;
+h3 {
+    color: #D1D5DB;
+    font-size: 200%;
+    margin-bottom: 4%;
+}
+
+
+p, span {
+    color: #868190;
+    font-size: 160%;
+    margin: 4%;
+}
+
+#number, #arabic {
+    height: 80px;
+    border-radius: 17px;
+    font-size: 25px;
+    color: #5F506A;
+    text-indent: 5%;
+}
+
+#message {
+    display: none;
+    background: #D1D5DB;
+    color: #5F506A;
+    position: relative;
+    padding: 30px;
+    margin-top: 10px;
+    font-size: 15px;
+    border-radius: 7px;
+    opacity: 0.7;
+}
+
+#message ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+button {
+    padding: 10px;
+    border-radius: 7px;
+    height: 60px;
+    width: 30%;
+    font-size: 25px;
+    font-family: 'Sanchez', serif;
+    background-color: #D1D5DB;
+    color: #5F506A;
+    margin-left: 35%;
+}
+
+button:hover {
+    background-color: #868190;
+}
+
+.result {
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 350px;
+    background-color: white;
+    height: 15px;
+    border-radius: 17px;
+    color: #5F506A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* end of section 2 */
+
+footer {
+    background-color: #D1D5DB;
+    width: 50vw;
+    margin: 0 auto;
+}
+
+footer a {
+    text-decoration: none;
+    color: #5F506A;
 }

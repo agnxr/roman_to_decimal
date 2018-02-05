@@ -4,50 +4,71 @@
     <meta charset="UTF-8">
     <title>Konwerter liczb rzymskich</title>
     <link rel="stylesheet" href="style/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet">
 </head>
 <body>
 
-<section class="romanToInt">
-    <form id="frm1">
-        Podaj liczbe: <input type="text" id="number"><br>
-    </form>
-
-    <div id="message">
-        <h3>Liczba powinna składać się ze znaków:</h3>
-        <ul>
-            <li>I</li>
-            <li>V</li>
-            <li>X</li>
-            <li>L</li>
-            <li>C</li>
-            <li>D</li>
-            <li>M</li>
-        </ul>
+<header>
+    <div id="intro">
+        <img src="images/column.svg">
+        <div>
+            <h1> Konwerter </h1>
+            <p> liczby rzymskie &#8652; liczby arabskie</p>
+        </div>
+        <img src="images/column.svg">
     </div>
+</header>
 
-    <p>Kliknij "Zamień", aby wyświetlić cyfrę arabską.</p>
+<section class="romanToInt">
+    <div>
+        <h3>Liczby rzymskie na arabskie</h3>
+        <form id="frm1">
+            <span>Podaj liczbę:</span><input type="text" id="number"><br>
+        </form>
 
-    <button onclick="convert()">Zamień</button>
+        <div id="message">
+            <h2>Liczba powinna składać się ze znaków:</h2>
+            <ul>
+                <li>I</li>
+                <li>V</li>
+                <li>X</li>
+                <li>L</li>
+                <li>C</li>
+                <li>D</li>
+                <li>M</li>
+            </ul>
+        </div>
 
-    <p id="converted"></p>
+        <p>Kliknij "Zamień", aby wyświetlić liczbę arabską.</p>
+
+        <button onclick="convert()">Zamień</button>
+
+        <div class="result">
+            <p id="converted"></p>
+        </div>
+    </div>
 </section>
 
 
 <section class="intToRoman">
-    <form id="frm2">
-        Podaj liczbe: <input type="text" id="arabic"><br>
-    </form>
+    <div>
+        <h3>Liczby arabskie na rzymskie</h3>
+        <form id="frm2">
+            <span>Podaj liczbę:</span><input type="text" id="arabic"><br>
+        </form>
 
-    <p>Kliknij "Zamień", aby wyświetlić cyfrę rzymską.</p>
+        <p>Kliknij "Zamień", aby wyświetlić liczbę rzymską.</p>
 
-    <button onclick="convert2()">Zamień</button>
+        <button onclick="convert2()">Zamień</button>
 
-    <p id="converted2"></p>
+        <div class="result">
+            <p id="converted2"></p>
+        </div>
+    </div>
 </section>
 
-
+<footer> <a href="#intro"> &#8673; Powrót do góry &#8673;</a></footer>
 </body>
 <script src="js/main.js"></script>
+
 </html>
