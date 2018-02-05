@@ -51,35 +51,35 @@ header, footer {
 }
 
 @media screen and (max-width: 1725px) {
-    .intro h1 {
+    #intro h1 {
         font-size: 400%;
     }
 
-    .intro p {
+    #intro p {
         font-size: 200%;
     }
 }
 
 @media screen and (max-width: 1450px) {
-    .intro h1 {
+    #intro h1 {
         font-size: 360%;
     }
 
-    .intro p {
+    #intro p {
         font-size: 160%;
     }
 }
 
 @media screen and (max-width: 1200px) {
-    .intro h1 {
+    #intro h1 {
         font-size: 330%;
     }
 
-    .intro p {
+    #intro p {
         font-size: 130%;
     }
 
-    .intro {
+    #intro {
         height: 200px;
     }
 }
