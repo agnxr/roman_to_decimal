@@ -84,6 +84,7 @@ header, footer {
     }
 }
 
+
 #intro img:last-child{
     -moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
@@ -200,4 +201,24 @@ footer {
 footer a {
     text-decoration: none;
     color: #5F506A;
+}
+
+
+@media screen and (max-width: 980px) {
+    #intro img {
+        display: none;
+    }
+
+    button {
+        margin-left: 5%;
+    }
+
+    .result {
+        margin-left: 5%;
+    }
+
+    #intro, .intToRoman, .romanToInt {
+        width: 100vw;
+    }
+
 }
