@@ -4,7 +4,7 @@
 
 This tool converts numbers between roman and decimal formats. 
 
-Used technologies:
+Technologies used:
 
 * HTML5,
 * CSS3,
